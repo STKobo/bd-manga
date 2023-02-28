@@ -8,10 +8,10 @@ class PageController extends Controller
     {
         if(isset($_GET['action'])) {
             switch ($_GET['action']) {
-                case 'about' :
-                    var_dump('On apelle la méthode about');
+                case 'about':
+                    
                     break;
-                case 'home' : 
+                case 'home': 
                     var_dump('On appelle la méthode home');
                     break;
                 default:
@@ -20,5 +20,10 @@ class PageController extends Controller
         } else {
 
         }
+    }
+
+    protected function about()
+    {
+        var_dump('On apelle la méthode about');
     }
 }

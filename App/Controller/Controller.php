@@ -24,4 +24,9 @@ Class Controller
             //charger la page d'accueil 
         }
     }
+
+    protected function render(string $path, array $params = []): void
+    {
+        
+    }
 }
