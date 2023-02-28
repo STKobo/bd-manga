@@ -8,7 +8,8 @@ Class Controller
         if(isset($_GET['controller'])) {
             switch ($_GET['controller']){
                 case 'page' : 
-                    var_dump('On charge PageController');
+                    $pageController = new PageController();
+                    $pageController->route();
                     break; 
 
                 case 'book':
